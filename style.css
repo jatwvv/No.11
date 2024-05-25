@@ -1,0 +1,175 @@
+@font-face {
+    font-family: Hanken Grotesk;
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+body{
+    font-family: Hanken Grotesk;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.container .result {
+    background: linear-gradient(180deg, hsl(252, 100%, 67%) 10%, hsl(241, 81%, 54%) 100%);
+    border-radius: 30px ;
+    -webkit-border-radius: 30px ;
+    -moz-border-radius: 30px ;
+    -ms-border-radius: 30px ;
+    -o-border-radius: 30px ;
+    width: 370px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.container .result h3 {
+    color: #ffffff93;
+    font-size: 25px;
+    padding-top: 15px;
+}
+.container .result .circle {
+    background: linear-gradient(180deg, hsl(252deg 61.82% 47.2%) 10%, hsl(241deg 72.88% 58.16%) 100%);    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    margin: auto;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: #fff;
+}
+.container .result .circle h1 {
+    padding-top: 30px;
+    font-size: 70px;
+    margin: 0;
+}
+.container .result .circle p {
+    margin: 0;
+    color: hsla(222, 100%, 96%, 0.522);
+    font-weight: 800;
+}
+.container .result h2 {
+    color: #fff;
+    font-size: 40px;
+    margin: 25px;
+}
+.container .result .tex {
+    color: hsla(222, 100%, 96%, 0.764);
+    padding: 0 70px;
+    margin: 0;
+}
+
+.container .info {
+    width: 370px;
+    background-color: #fff;
+    position: relative;
+    left: -24px;
+    z-index: -1;
+    border-radius: 0 30px 30px 0;
+    -webkit-border-radius: 0 30px 30px 0;
+    -moz-border-radius: 0 30px 30px 0;
+    -ms-border-radius: 0 30px 30px 0;
+    -o-border-radius: 0 30px 30px 0;
+    box-shadow: 0px 12px 20px 0px rgb(0 0 0 / 13%), 0px 2px 4px 0px rgb(0 0 0 / 12%);
+}
+.container .info .Bbox {
+    padding-left: 60px;
+}
+.container .info .Bbox h1 {
+    color: hsl(224, 30%, 27%);
+    font-size: 26px;
+    padding-top: 20px;
+}
+.container .info .Bbox .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    padding: 0 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.container .info .Bbox .red {
+    background-color: hsla(0, 100%, 67%, 0.097);
+}
+.container .info .Bbox .yellow {
+    background-color: hsla(39, 100%, 56%, 0.097);
+}
+.container .info .Bbox .green {
+    background-color: hsla(166, 100%, 37%, 0.097);
+}
+.container .info .Bbox .blue {
+    background-color: hsla(234, 85%, 45%, 0.097);
+}
+.container .info .Bbox .box .icon {
+    display: flex;
+}
+.container .info .Bbox .box .icon img {
+    padding-right: 10px;
+}
+.container .info .Bbox .box .nums {
+    color: #9c9c9c;
+    font-weight: 600;
+}
+.container .info .Bbox .box .nums span {
+    color: hsl(224, 30%, 27%);
+}
+.container .info .btn {
+    background-color: hsl(224, 30%, 27%);
+    margin-right: 40px;
+    padding: 15px 0;
+    border-radius: 40px;
+    text-align: center;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    cursor: pointer;
+    transition: 0.4s all ease;
+    -webkit-transition: 0.4s all ease;
+    -moz-transition: 0.4s all ease;
+    -ms-transition: 0.4s all ease;
+    -o-transition: 0.4s all ease;
+    margin-top: 45px;
+}
+
+.container .info .btn a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.container .info .btn:hover {
+    background: linear-gradient(180deg, hsl(252, 100%, 67%) 10%, hsl(241, 81%, 54%) 100%);
+}
+@media (max-width:768px) {
+    .container {
+        display: block;
+        margin-top: 0;
+        margin: auto;
+    }
+    .container .result {
+        width: 100%;
+    }
+    .container .info {
+        z-index: -1;
+        width: 100%;
+        left: 0px;
+        top: -60px;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        padding-bottom: 30px;
+}
+    .container .info .Bbox h1 {
+        padding-top: 0;
+    }
+    .container .info .Bbox {
+        padding-left: 40px;
+        padding-top: 60px;
+    }
+}
